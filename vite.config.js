@@ -1,5 +1,4 @@
-// vite.config.js
-import { remix } from "@remix-run/dev/vite";
+import remix from "@remix-run/dev/config/vite.js";
 import { vercel } from "@vercel/remix";
 import tsconfigPaths from "vite-tsconfig-paths";
 
