@@ -1,7 +1,8 @@
-import vercelPreset from '@vercel/remix';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import vercelPreset from "@vercel/remix/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
+/** @type {import('vite').UserConfig} */
 export default {
-  ...vercelPreset(),
+  ...vercelPreset,
   plugins: [tsconfigPaths()],
 };
