@@ -3,11 +3,12 @@
 client_id = "819d952f9b1afcd3aa7c4cd299511fca"
 name = "wc-theme-installer"
 handle = "wc-theme-installer"
-application_url = "https://example.com/"
+application_url = "https://coordinate-responsibility-consortium-constraints.trycloudflare.com"
 embedded = true
 
 [build]
 include_config_on_deploy = true
+automatically_update_urls_on_dev = true
 
 [webhooks]
 api_version = "2025-04"
@@ -25,7 +26,7 @@ api_version = "2025-04"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = ["https://coordinate-responsibility-consortium-constraints.trycloudflare.com/auth/callback", "https://coordinate-responsibility-consortium-constraints.trycloudflare.com/auth/shopify/callback", "https://coordinate-responsibility-consortium-constraints.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
