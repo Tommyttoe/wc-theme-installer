@@ -5,9 +5,6 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 /** @type {import('@vercel/remix').VercelViteConfig} */
 export default {
-  ...vercel.remix(), // This gives Vercel the correct config
-  plugins: [
-    remix(),          // Must include Remix plugin
-    tsconfigPaths()
-  ]
+  ...vercel(),
+  plugins: [remix(), tsconfigPaths()],
 };
