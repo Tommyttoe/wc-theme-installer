@@ -1,11 +1,13 @@
-import vercelPreset from "@vercel/remix/vite";
-import tsconfigPaths from "vite-tsconfig-paths";
+// vite.config.js
 import { remix } from "@remix-run/dev/vite";
+import { vercel } from "@vercel/remix";
+import tsconfigPaths from "vite-tsconfig-paths";
 
+/** @type {import('@vercel/remix').VercelViteConfig} */
 export default {
-  ...vercelPreset,
+  ...vercel.remix(), // This gives Vercel the correct config
   plugins: [
-    remix(),       // 👈 Add this line
+    remix(),          // Must include Remix plugin
     tsconfigPaths()
-  ],
+  ]
 };
